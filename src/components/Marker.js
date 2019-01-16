@@ -40,7 +40,7 @@ export class Marker extends React.Component {
 	  
 	  var positionChanged = false;
 	  if (this.props.position && prevProps.position) {
-		  positionChanged = this.props.position.lat != prevProps.lat || this.props.position.lng != prevProps.lng;
+		  positionChanged = this.props.position.lat != prevProps.position.lat || this.props.position.lng != prevProps.position.lng;
 	  } else {
 		  positionChanged = this.props.position !== prevProps.position;
 	  }
