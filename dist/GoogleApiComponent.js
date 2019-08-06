@@ -211,9 +211,11 @@
               google: window.google
             });
 
-            return _react2.default.createElement(
+            var wrapperClassName = this.state.options.wrapperClassName || '';
+
+			return _react2.default.createElement(
               'div',
-              null,
+              { className: wrapperClassName },
               _react2.default.createElement(WrappedComponent, props),
               _react2.default.createElement('div', { ref: 'map' })
             );
