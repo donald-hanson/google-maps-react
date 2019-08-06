@@ -117,8 +117,10 @@ export const wrapper = input => WrappedComponent => {
         google: window.google
       });
 
+      var wrapperClassName = this.state.options.wrapperClassName || '';
+
       return (
-        <div>
+        <div className={wrapperClassName}>
           <WrappedComponent {...props} />
           <div ref="map" />
         </div>
